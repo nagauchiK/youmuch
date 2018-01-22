@@ -1,7 +1,7 @@
 function init() {
 $(function () {
   $.ajax({
-    dataType: 'text',
+    dataType:'text',
     url:'tkn.dat'
   })
   .done(function(data){
@@ -12,7 +12,8 @@ $(function () {
 		console.log("XMLHttpRequest : " + XMLHttpRequest.status);
         	console.log("textStatus     : " + textStatus);
         	console.log("errorThrown    : " + errorThrown.message);
-	});
+	  	console.dir(arguments);
+});
 });
 var tet="";
 tet.load("tkn.data");
