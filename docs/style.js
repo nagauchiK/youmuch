@@ -2,7 +2,7 @@ function init() {
 $(function () {
   $.ajax({
     dataType: 'text',
-    url:'../tkn.dat',
+    url:'../tkn.dat'
   })
   .done(function(data){
     alert(data);
