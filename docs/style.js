@@ -14,5 +14,8 @@ $(function () {
         	console.log("errorThrown    : " + errorThrown.message);
 	});
 });
+var tet="";
+tet.load("tkn.data");
+alert(tet);
 alert("youmuch");
 }
