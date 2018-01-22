@@ -1,11 +1,11 @@
 function init() {
-	alert("nagauchi");
+	alert("youmuch");
 	var data = "";
 	$(function() {
 			$.ajax({
 			type : 'GET',
 			cache : false,
-			url : 'https://23ue8qebli.execute-api.us-west-2.amazonaws.com/tomato',
+			url : '',
         	data: data
    		})  
 		.done(function(data) {
