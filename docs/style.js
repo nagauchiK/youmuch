@@ -5,7 +5,7 @@ $(function () {
     url:'tkn.dat'
   })
   .done(function(data){
-    alert(data);
+    alert(data+ "kaito");
   })
   .fail(function(XMLHttpRequest, textStatus, errorThrown) {
 		alert( "error" ); //通信が失敗した場合、errorを表示
