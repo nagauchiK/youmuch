@@ -15,8 +15,10 @@ $(function () {
 	  	console.dir(arguments);
 });
 });
+/*
 var tet="";
 tet.load("tkn.data");
 alert(tet);
+*/
 alert("youmuch");
 }
