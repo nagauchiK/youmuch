@@ -7,9 +7,12 @@ $(function () {
   .done(function(data){
     alert(data);
   })
-  .fail(function(){
-    alert("ada");
-  });
+  .fail(function(XMLHttpRequest, textStatus, errorThrown) {
+		    alert( "error" ); //通信が失敗した場合、errorを表示
+		    console.log("XMLHttpRequest : " + XMLHttpRequest.status);
+        	console.log("textStatus     : " + textStatus);
+        	console.log("errorThrown    : " + errorThrown.message);
+	});
 });
 alert("youmuch");
 }
