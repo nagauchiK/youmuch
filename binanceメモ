@@ -1,0 +1,59 @@
+https://api.binance.com
+
+	General endpoints
+
+Test connectivity
+GET /api/v1/ping
+
+Check server time
+GET /api/v1/time
+
+Exchange information
+GET /api/v1/exchangeInfo
+
+
+	Market Data endpoints
+
+Order book
+GET /api/v1/depth
+Parameters:   symbol	limit	
+
+Recent trades list
+GET /api/v1/trades
+Parameters:   symbol	limit	
+
+Old trade lookup (MARKET_DATA)
+GET /api/v1/historicalTrades
+Parameters:   symbol	limit	formed
+
+Compressed/Aggregate trades list
+GET /api/v1/aggTrades
+Parameters:   symbol	formed  startTime  endTime  limit
+
+Kline/Candlestick data
+GET /api/v1/klines
+Parameters:   symbol	interval  limit  startTime  endTime
+
+24hr ticker price change statistics
+GET /api/v1/ticker/24hr
+Parameters:   symbol
+OR
+
+Symbol price ticker
+GET /api/v3/ticker/price
+Parameters:   symbol
+OR
+
+Symbol order book ticker
+GET /api/v3/ticker/bookTicker
+Parameters:   symbol
+OR
+
+
+ex)
+https://api.binance.com/api/v3/ticker/price
+https://api.binance.com/api/v3/ticker/bookTicker
+https://api.binance.com/api/v1/ticker/24hr
+https://api.binance.com/api/v1/klines?symbol=BNBBTC&interval=1h&limit=10
+https://api.binance.com/api/v1/exchangeInfo
+
